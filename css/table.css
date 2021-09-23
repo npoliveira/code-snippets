@@ -1,0 +1,10 @@
+/* tags */
+
+td, th {
+    border-width: 0.05rem;
+    border-style: solid;
+}
+
+table {
+    border-collapse: collapse;
+}
