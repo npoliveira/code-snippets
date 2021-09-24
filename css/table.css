@@ -8,3 +8,32 @@ td, th {
 table {
     border-collapse: collapse;
 }
+
+/* classes */
+
+.complex {
+    border-collapse: unset;
+    border-style: solid;
+    border-color: blue;
+}
+
+.complex td, th {
+    border-color: blue;
+}
+
+/* another way to apply
+style to row or other elements
+without changing the HTML
+.complex tbody tr:nth-child(2) {
+    font-weight: bold;
+}
+*/
+
+.complex tbody tr:nth-child(4) td:nth-child(3) {
+    color: red;
+}
+
+.complex td:hover {
+    font-size: 1.1rem;
+    background-color: yellow;
+}
