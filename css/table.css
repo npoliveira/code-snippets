@@ -17,7 +17,7 @@ table {
     border-color: blue;
 }
 
-.complex td, th {
+.complex td, .complex th {
     border-color: blue;
 }
 
@@ -36,4 +36,21 @@ without changing the HTML
 .complex td:hover {
     font-size: 1.1rem;
     background-color: yellow;
+}
+
+.seminar {
+    text-align: center;
+    border: thick double black;
+}
+
+.seminar tbody tr:first-child td:nth-child(2), .seminar tbody tr:nth-child(3) td:nth-child(2), .seminar tbody tr:nth-child(3) td:nth-child(3), .seminar tbody tr:nth-child(4) td:first-child, .seminar tbody tr:last-child td:nth-child(2) {
+    background-color: navajowhite
+}
+
+.seminar tbody tr:first-child td:nth-child(3), .seminar tbody tr:nth-child(5) td:nth-child(2) {
+    background-color: lightskyblue
+}
+
+.seminar tbody tr:nth-child(4) td:nth-child(2), .seminar tbody tr:nth-child(5) td:first-child, .seminar tbody tr:last-child td:nth-child(3) {
+    background-color: lightgreen
 }
