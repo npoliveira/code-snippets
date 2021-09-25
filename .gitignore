@@ -1,6 +1,9 @@
 # vscode
 .vscode/
 
+_draft.html
+_draft.css
+
 # Logs
 logs
 *.log
