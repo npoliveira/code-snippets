@@ -33,25 +33,28 @@ td {
     color: white;
 }
 
-thead div {
+thead div.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+thead div.flex div {
     display: inline-block;
     text-align: left;
 }
 
-thead div:first-child {
-    float: left;
+thead div.flex div:first-child {
     color: white;
 }
 
-thead div:last-child {
-    float: right;
+thead div.flex div:last-child {
     color: #58A3FF;
     padding: 0.50rem;
     font-weight: normal;
     margin-top: -0.5rem;
 }
 
-thead div:last-child:hover {
+thead div.flex div:last-child:hover {
     color: #58A3FF;
     background-color: #3A3B3C;
     border-radius: 0.25rem;
