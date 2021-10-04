@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: whitesmoke;
+        }
+
+        table,
+        td,
+        th {
+            border-style: solid;
+            background-color: white;
+        }
+
+        thead th {
+            color: red;
+            background-color: goldenrod;
+        }
+
+        tfoot td {
+            color: green;
+            background-color: fuchsia;
+        }
+
+        tbody td:first-child {
+            color: cornflowerblue;
+            background-color: darkblue;
+        }
+
+        tbody td:last-child {
+            color: coral;
+            background-color: darkslategrey;
+        }
+
+        tbody td:nth-last-child(2) {
+            color: darkorchid;
+            background-color: blue;
+        }
+
+        /* column #2, of last row inside a tbody of a table under a class k96*/
+        .k96 tbody tr:last-child td:nth-child(2),
+        /* column #2, of last row inside a tbody of a table under a div*/
+        div tbody tr:last-child td:nth-child(2) {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        <br>selectors: tag html OR .class or #id
+        <br>selectors combined with filters: selector1 selector2
+        <br>selectors combined with function: selector1:function-name
+        <br>selectors grouped: selector1, selector2, selector3
+        <br>selectors mixed: selector1 selector2:function selector3
+
+    </p>
+    <hr>
+
+    <div>
+        <table id="d99">
+            <thead>
+                <tr>
+                    <th>ABC</th>
+                    <th>ABC</th>
+                    <th>ABC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                </tr>
+                <tr class="any">
+                    <td>ABC</td>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                    <td>ABC</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <hr>
+    <table class="k96">
+        <thead>
+            <tr>
+                <th>XYZ</th>
+                <th>XYZ</th>
+                <th>XYZ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+            </tr>
+            <tr>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+            </tr>
+            <tr id="d88">
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

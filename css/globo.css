@@ -1,0 +1,82 @@
+/* tags */
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, thead tr {
+    border-width: 0.025rem;
+    border-color: lightgray;
+}
+
+table {
+    border-style: solid;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+thead tr {
+    border-bottom-style: solid;
+}
+
+thead th div, thead tr, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+td, th {
+    padding: 0.75rem;
+}
+
+th {
+    padding-bottom: 1rem;
+}
+
+th div {
+    display: inline-block;
+}
+
+th div:first-child {
+    float: left;
+    text-align: left;
+}
+
+th div:last-child {
+    float: right;
+    color: green;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+li:hover, th div:last-child:hover {
+    color: #034903;
+}
+
+li {
+    list-style-type: none;
+    color: green;
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: lightgray;
+    text-align: center;
+    display: inline-block;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.20rem;
+}
+
+li:active {
+    color: white;
+    border-color: green;
+    background-color: green;
+}
+
+/* classes */
+
+.button {
+    text-align: center;
+    background-color: lightgray;
+    padding: 0.75rem;
+    color: gray
+}
