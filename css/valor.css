@@ -1,0 +1,84 @@
+/* tags */
+
+html {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 30%;
+    padding: 1rem;
+}
+
+th {
+    border-bottom: lightgray;
+    border-bottom-style: ridge;
+    padding-bottom: 0.75rem;
+}
+
+p {
+    margin: 0;
+}
+
+td {
+    padding: 0.3rem;
+}
+
+th div {
+    padding-bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* another ways: td+td or td:nth-child(n+2) */
+
+td:not(td:first-child) {
+    text-align: center;
+}
+
+td:nth-child(n+1) {
+    font-size: 0.80rem;
+    padding: 0.40rem;
+}
+
+tr:nth-child(even) {
+    background: #eee8e8;
+}
+
+tbody tr:first-child td {
+    font-size: 0.75rem;
+}
+
+tfoot td {
+    color: #499292;
+    border-top-style: solid;
+    border-top-color: lightgray;
+}
+
+/* classes */
+
+.right {
+    font-weight: normal;
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.green {
+    color: #84A253;
+    font-weight: bold
+}
+
+.icon {
+    font-size: 1.25rem;
+    margin-left: 0;
+}
+
+.code {
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    align-self: flex-end;
+}
