@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Developer</title>
+    <link href="../css/form.dev.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h2>DEV registration</h2>
+        <p>Complete your information</p>
+    </div>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <div>
+                <label for="first-name">First Name
+                    <input type="text" name="first-name" id="first-name" required>
+                </label>
+            </div>
+            <div>
+                <label for="last-name">Last Name
+                    <input type="text" name="last-name" id="last-name" required>
+                </label>
+            </div>
+            <div>
+                <label for="phone-number">Phone number
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="(__) ____-____" required>
+                </label>
+            </div>
+            <div>
+                <label for="email">Email
+                    <input type="email" name="email" id="email" required>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Professional information</legend>
+            <div>
+                <p>What kind of developer are you?</p>
+                <label for="dev-stack">
+                    <input type="radio" name="dev-stack" value="frontend">Frontend
+                    <input type="radio" name="dev-stack" value="backend">Backend
+                    <input type="radio" name="dev-stack" value="fullstack">Fullstack
+                </label>
+            </div>
+            <div>
+                <label for="seniority">Seniority
+                    <select id="seniority">
+                        <option value="">-Select-</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid-level">Mid-Level</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <p>Select your best skills</p>
+                <input type="checkbox" id="tech-html" name="tech-html">
+                <label for="tech-html">HTML</label>
+                <input type="checkbox" id="tech-css" name="tech-css">
+                <label for="tech-css">CSS</label>
+                <input type="checkbox" id="tech-java" name="tech-java">
+                <label for="tech-java">Java</label>
+                <input type="checkbox" id="tech-php" name="tech-php">
+                <label for="tech-php">PHP</label>
+                <input type="checkbox" id="tech-csharp" name="tech-csharp">
+                <label for="tech-csharp">C#</label>
+                <input type="checkbox" id="tech-python" name="tech-python">
+                <label for="tech-python">Python</label>
+                <input type="checkbox" id="tech-js" name="tech-js">
+                <label for="tech-js">JavaScript</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="experience">Tell us more about your experience
+                <textarea rows="5" id="experience" name="experience"></textarea>
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
